@@ -60,7 +60,7 @@
           require "Session.php";
           require "SpotifyWebAPI.php";
 
-          $session = new SpotifyWebAPI\Session('0252da656a1f4533b864ad999d268487','8cbacfaaae8348b29e937ac59b94382f','http://localhost/g191210021/ilgialani.php/');
+          $session = new SpotifyWebAPI\Session('','','http://localhost/g191210021/ilgialani.php/');
           $api = new SpotifyWebAPI\SpotifyWebAPI();
           if(isset($_GET["code"])){
             $session->requestAccessToken($_GET["code"]);
